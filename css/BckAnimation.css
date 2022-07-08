@@ -1,8 +1,9 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
+/* color pallete url https://colorpalettes.earth/p/7b7598149d */
 
 body {
   margin:0;
-  background-color: #aab9c1;
+  background-color: #8ea2ba;
 }
 
 h1 .heavy-header {
@@ -23,8 +24,7 @@ h1 .heavy-header {
 .header {
   position:relative;
   text-align:center;
-  background: linear-gradient(60deg, #525073 0%, #212d3e 100%);
-  color: #aab9c1;
+  background: linear-gradient(60deg, #485b71 0%, #203141 100%);
 }
 
 
