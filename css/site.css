@@ -4,3 +4,42 @@
     border: 1px solid black;
 }
 
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+li {
+    list-style: none;
+}
+ 
+span {
+    color: aliceblue;
+}
+
+.glass {
+/* From https://css.glass */
+background: rgba(142, 162, 186, 0.1);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(14.3px);
+-webkit-backdrop-filter: blur(14.3px);
+border: 1px solid rgba(142, 162, 186, .1);
+}
+
+.total-container-fluid {
+    height: 100vh;
+    width: vw;
+}
+
+.container {
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+}
