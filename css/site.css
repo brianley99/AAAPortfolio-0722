@@ -18,28 +18,60 @@
 li {
     list-style: none;
 }
- 
+
 span {
     color: aliceblue;
 }
 
 .glass {
-/* From https://css.glass */
-background: rgba(142, 162, 186, 0.1);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(14.3px);
--webkit-backdrop-filter: blur(14.3px);
-border: 1px solid rgba(142, 162, 186, .1);
+    /* From https://css.glass */
+    background: rgba(142, 162, 186, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.3px);
+    -webkit-backdrop-filter: blur(14.3px);
+    border: 1px solid rgba(142, 162, 186, .1);
 }
 
 .total-container-fluid {
     height: 100vh;
-    width: vw;
+    width: 100%;
 }
 
 .container {
     margin-top: 30px;
     margin-bottom: 15px;
 
+}
+
+.bop {
+    animation: MoveUpDown 1.5s linear infinite;
+    position: absolute;
+    bottom: 0;
+}
+
+@keyframes MoveUpDown {
+
+    0%,
+    100% {
+        bottom: 10px;
+    }
+
+    50% {
+        bottom: 20px;
+    }
+}
+
+.bg-section {
+    background-color: #7b8faa;
+    border-radius: 1rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.3px);
+    -webkit-backdrop-filter: blur(14.3px);
+    border: 1px solid rgba(142, 162, 186, .1);
+    color: #203141;
+}
+
+.text-blue {
+    color: #203141;
 }
