@@ -76,3 +76,7 @@ span {
     color: #203141;
 }
 
+.img-frame {
+    background: gold;
+    border: gold;
+}
