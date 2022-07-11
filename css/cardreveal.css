@@ -1,0 +1,18 @@
+.card-rev {
+    background-image: url(/img/);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 20rem;
+    height: 20rem;
+}
+
+
+#card-vanish {
+    display: none;
+}
+
+#card-activator:hover>#card-vanish {
+    display:block;
+}

@@ -1,0 +1,80 @@
+/* ======================== */
+/* 
+    Ignore the following styles. They are not important to achieve the effect.
+    I'm only using them for looks (overall page background/font styles/centering content).
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* ======================== */
+
+.card-open {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    color: #a18a96;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    padding: 10px;
+    background-color: #8ea2ba;
+    background-size: 10rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 20px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.card-open::before,
+.card-open::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: calc(60% + 35px);
+    background-color: #fff;
+    transition: transform .5s.25s ease-in;
+    z-index: -1;
+}
+
+.card-open::before {
+    top: 0;
+    clip-path:
+        polygon(0 0, 100% 0, 100% 45%, 0% 100%);
+    transform: translateY(-100%);
+}
+
+.card-open::after {
+    bottom: 0;
+    clip-path: polygon(0 55%, 100% 0, 100% 100%, 0% 100%);
+    transform: translateY(100%);
+}
+
+.card-open__content {
+    opacity: 0;
+    transition: opacity .25s;
+}
+
+.card-open__title {
+    color: #6A515E;
+    margin-bottom: 15PX;
+}
+
+.card-open__description {
+    font-size: 14px;
+}
+
+.card-open:hover::before,
+.card-open:hover::after {
+    transform: translateY(0);
+}
+
+.card-open:hover .card-open__content {
+    opacity: 1;
+    transition-delay: .75s;
+}
+
+.card-open-text {
+    width: 20rem;
+    text-align: center;
+}
