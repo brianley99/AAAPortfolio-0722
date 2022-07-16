@@ -95,6 +95,10 @@ span {
     background-color: #263e4e;
 }
 
+.rewind {
+    background-color: #fef6e4;
+}
+
 .card img {
     height: 60%;
     border-radius: 1rem;
