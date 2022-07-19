@@ -99,6 +99,10 @@ span {
     background-color: #fef6e4;
 }
 
+.fizzbuzz {
+    background-color: #e3f6f5;
+}
+
 .card img {
     height: 60%;
     border-radius: 1rem;
