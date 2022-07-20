@@ -103,6 +103,11 @@ span {
     background-color: #e3f6f5;
 }
 
+.tacocat {
+    background: rgb(167, 169, 190);
+    background: linear-gradient(45deg, rgb(49, 49, 56) 0%, rgb(83, 83, 96) 100%);
+}
+
 .card img {
     height: 60%;
     border-radius: 1rem;
@@ -119,23 +124,25 @@ span {
 }
 
 .gradient {
-	background: linear-gradient(-45deg, #b0b0b0, #b0b0b0, #c2c9cc, #7da4bc, #3f5f70, #8d9297, #8d9297);
-	background-size: 400% 400%;
+    background: linear-gradient(-45deg, #b0b0b0, #b0b0b0, #c2c9cc, #7da4bc, #3f5f70, #8d9297, #8d9297);
+    background-size: 400% 400%;
     border-radius: 1rem;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	animation: gradient 45s ease infinite;
-	height: 100vh;
+    animation: gradient 45s ease infinite;
+    height: 100vh;
 
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
